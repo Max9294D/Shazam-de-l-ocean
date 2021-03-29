@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="oui2">
+<file>shazam_oceans.png</file>
+    <file>oui.jpg</file>
+  </qresource>
+</RCC>

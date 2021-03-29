@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IHM2</class>
+ <widget class="QMainWindow" name="IHM2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Shazam des Océans</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>shazam_oceans.png</normaloff>shazam_oceans.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="img_choisie" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>771</width>
+      <height>321</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Rechercher">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>104</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rechercher</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="nbr_choix">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>360</y>
+      <width>126</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bouton_droit">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>360</y>
+      <width>104</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bouton_gauche">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>360</y>
+      <width>104</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;-</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="Image_12_13_25" native="true">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>410</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="Image_11_23_35" native="true">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>410</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="Image_22_32_45" native="true">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>410</y>
+      <width>151</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Couleur">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>360</y>
+      <width>104</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Couleur</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Distance">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>360</y>
+      <width>104</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Distance</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichiers">
+    <property name="title">
+     <string>Fichiers</string>
+    </property>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <addaction name="menuFichiers"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuitter</sender>
+   <signal>triggered()</signal>
+   <receiver>IHM2</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
